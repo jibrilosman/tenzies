@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background: #0B2434;
+  overflow: hidden;
+}
+main {
+  height: 500px;
+  max-width: 600px;
+  background: #f5f5f5;
+  margin: 100px auto;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+.dice__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin: 30px auto;
+}
+.dice__face {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: cascadia code;
+  cursor: pointer;
+}
+.dice__face:hover {
+  background: #f5f5f5;
+}
+
+.roll__dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+}
+
+
+
+/* media query (medium devices)*/
+@media screen and (max-width: 1024px) {
+    main {
+        max-width: 450px;
+    }
+  
+}
+
+
+/* media query (small devices)*/
+@media screen and (max-width: 600px) {
+    main {
+      max-width: 450px;
+  }
+}
