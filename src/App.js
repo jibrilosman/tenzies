@@ -144,7 +144,6 @@ function App() {
           {tenzies ? "New Game": "Roll Dice"}
         </button>
         <p>You have rolled the dice {clickCount} times.</p>
-        <p>You have rolled the dice {clickCount} times.</p>
         {tenzies && <p>It took you {Math.floor(timeTaken / 1000)} seconds to get tenzies.</p>}
     </main>
   );
